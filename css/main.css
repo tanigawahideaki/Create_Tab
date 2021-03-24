@@ -1,1 +1,25 @@
-
+.tab{
+    width: 500px; /*横幅を設定(本来は設定する必要なし)*/
+}
+.tab-nav{
+    display: flex; /*aタグを横に並べる*/
+}
+.tab-nav-item{
+    margin-right: 2px; /*タブの右との間隔を2pxあける*/
+    background: #ccc; /*タブの背景の色を灰色にする*/
+    color: #000; /*文字の色を黒色にする*/
+    padding: 10px 20px; /*タブ内の幅を広げる*/
+    text-decoration: none; /*aタグの下線を消す*/
+    border-radius: 5px 5px 0 0; /*角を丸くする*/
+}
+.tab-nav-item.is-active{
+    background:#000;
+    color: #fff;
+}
+.tab-contents{
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+.tab-contents-item{
+    display: none;
+}
